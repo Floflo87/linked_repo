@@ -1,0 +1,231 @@
+body {
+    background-color: beige;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 150px;
+    font-size: 25px;
+    color: green;
+    font-family: 'starWars';
+}
+
+@font-face {
+    font-family: 'starWars';
+    src: url(/star_jedi/stjedise/STJEDISE.TTF);
+}
+
+#playboard {
+    width: 700px;
+    height: 700px;
+    background-color: #ffd700;
+    border: 3px solid black;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+    cursor: url('/Star\ Wars\ X-Wing.cur'), auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.scoreboard {
+    width: 300px;
+    height: 500px;
+    background-color: #ffd700;
+    border-radius: 30px;
+    border: 3px solid black;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.finalScore {
+    width: 300px;
+    height: 500px;
+    background-color: #ffd700;
+    border-radius: 30px;
+    border: 3px solid black;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#sound {
+    display: none;
+}
+
+#yodaSound {
+    display: none;
+}
+
+#soundFail {
+    display: none;
+}
+
+.tiles {
+    width: 130px;
+    height: 130px;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 30px;
+}
+
+.chewi {
+    width: 130px;
+    height: 130px;
+    background: url(./Chewi.png);
+    background-repeat: no-repeat;
+    background-size: 130 px, 130px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 30px;
+}
+
+.tiFighter {
+    width: 130px;
+    height: 130px;
+    background: url(./TiFighter.png);
+    background-repeat: no-repeat;
+    background-size: 130 px, 130px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 30px;
+}
+
+.deathStar {
+    width: 130px;
+    height: 130px;
+    background: url(./DeathStar.png);
+    background-repeat: no-repeat;
+    background-size: 130 px, 130px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 30px;
+}
+
+.yoda {
+    width: 130px;
+    height: 130px;
+    background: url(./Yoda.png);
+    background-repeat: no-repeat;
+    background-size: 130 px, 130px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 30px;
+}
+
+#score {
+    width: 200px;
+    height: 150px;
+    background-color: black;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#counter {
+    width: 200px;
+    height: 150px;
+    background-color: black;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#display {
+    width: 200px;
+    height: 150px;
+    background-color: #ffd700;
+    border-radius: 20px;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 30px;
+    color: black;
+    font-family: 'starWars';
+}
+
+#buttonEnd {
+    background-color: black;
+    border: 3px solid black;
+    border-radius: 30px;
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+    list-style: none;
+    margin: 0px 15px;
+}
+#buttonEnd a {
+    text-decoration: none;
+    color: white;
+    font-family: 'starWars';
+}
+
+#startButton {
+    background-color: #ffd700;
+    border: 3px solid;
+    border-radius: 30px;
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+    list-style: none;
+    margin: 0px 15px;
+    margin-bottom: 30px;
+    font-family: 'starWars';
+}
+
+#mainContainer {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+    left: 0;
+    padding-left: 100px;
+}
+
+#startButton a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    margin-top: 0;
+}
+
+h4 {
+    margin-bottom: 0;
+}
+
+#video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#space {
+    display: flex;
+    justify-content: flex;
+    align-items: center;
+    margin-top: 10px;
+}
