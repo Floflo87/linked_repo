@@ -101,7 +101,7 @@ $(document).ready(function() {
     function setTiFighterInterval() {
         if (tiFighterInterval) clearInterval(tiFighterInterval);
         tiFighterInterval = setInterval(function() {
-            var shouldPick = Math.random() > 0.2;
+            var shouldPick = Math.random() > 0.3;
             if (shouldPick) {
                 var tiFighter = getRandomInt(25);
                 // if ($('.tiles:nth-Child(' + tiFighter + ')').is('.chewi, .yoda, .deathStar')) {
