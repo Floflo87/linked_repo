@@ -11,7 +11,7 @@ body {
 
 @font-face {
     font-family: 'starWars';
-    src: url(/star_jedi/stjedise/STJEDISE.TTF);
+    src: url(/STJEDISE.TTF);
 }
 
 #playboard {
