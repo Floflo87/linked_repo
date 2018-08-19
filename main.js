@@ -52,7 +52,7 @@ $(document).ready(function() {
                 .css('color', 'black')
                 .html('Game 0ver: You have ' + score + 'points.')
                 .append(
-                    '<button id="buttonEnd"><a href="http://127.0.0.1:5500/index.html">Play again i want to. </a></button>'
+                    '<button id="buttonEnd"><a href="./main.html">Play again i want to. </a></button>'
                 );
         }
     }, 1000);
